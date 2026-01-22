@@ -47,6 +47,10 @@ export default function Home() {
             View all research notes →
           </Link>
         </p>
+        <p className="text-xs text-neutral-500">
+          Quant Notes is a public research notebook associated with the Quant
+          Engineering Lab.
+        </p>
       </section>
     </>
   );

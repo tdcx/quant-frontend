@@ -17,6 +17,11 @@ export default function About() {
           written as research memoranda and is intended to be read independently
           of any system, product, or service.
         </p>
+        <p className="text-lg text-neutral-700">
+          These notes are exploratory. Assumptions and conclusions may change
+          as experiments evolve. Publication does not imply completeness,
+          correctness, or applicability.
+        </p>
       </div>
 
       <section className="mt-6 space-y-2">
@@ -25,6 +30,10 @@ export default function About() {
           <li>Investment advice, trading signals, or portfolio guidance.</li>
           <li>Performance claims, benchmarks, or comparative rankings.</li>
           <li>Product marketing, sales material, or calls to action.</li>
+          <li>
+            Institutional positions, proprietary systems, or representations of
+            any firm or organization.
+          </li>
           <li>Speculative roadmaps or unpublished work.</li>
         </ul>
       </section>

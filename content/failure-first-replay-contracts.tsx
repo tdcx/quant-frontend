@@ -11,6 +11,11 @@ export default function FailureFirstReplayContracts() {
   return (
     <>
       <p className="mt-0">
+        This note discusses design patterns and research reasoning from a model
+        validation and diagnostics perspective. It is not production guidance
+        or a recommendation.
+      </p>
+      <p className={p}>
         Replayability is not about reproducing identical numbers. It is about
         making replay failure detectable, attributable, classifiable, and
         impossible to ignore.
