@@ -20,7 +20,7 @@ export default function WritingIndex() {
         </h1>
       </div>
 
-      <ul className="divide-y divide-neutral-200 border-t border-b border-neutral-200">
+      <ul className="divide-y divide-neutral-200 border-t border-b border-neutral-200 mb-2">
         {posts.map((post) => (
           <li
             key={post.slug}
@@ -38,6 +38,10 @@ export default function WritingIndex() {
           </li>
         ))}
       </ul>
+      <p className="text-xs text-neutral-500">
+          Research notes exploring numerical experiments, model validation, and
+          reproducibility. These notes inform the Quant Engineering Lab protocol.
+        </p>
     </>
   );
 }

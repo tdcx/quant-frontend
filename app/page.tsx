@@ -6,52 +6,30 @@ export default function Home() {
 
   return (
     <>
-      <section className="mb-8 space-y-3">
-        <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">
-          Research notes
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight">
-          Research notes on numerical experiments, model validation,
-          and reproducibility in quantitative finance.
+      <section className="mb-14 space-y-4">
+
+        <h1 className="text-7xl font-semibold tracking-tight">
+          Turn quantitative claims into independently verifiable artifacts.
         </h1>
-      </section>
-
-      <section className="space-y-3">
-        <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-neutral-500">
-          Recent writing
-        </h2>
-        <ul className="divide-y divide-neutral-200 border-t border-b border-neutral-200">
-          {recent.map((post) => (
-            <li
-              key={post.slug}
-              className="flex items-center justify-between py-3"
-            >
-              <Link
-                href={`/writing/${post.slug}`}
-                className="text-base font-medium text-neutral-900 hover:underline"
-              >
-                {post.title}
-              </Link>
-              <time className="text-sm text-neutral-500">
-                {formatDate(post.published)}
-              </time>
-            </li>
-          ))}
-        </ul>
-
-        <p className="pt-2 text-sm">
-          <Link
-            href="/writing"
-            className="text-neutral-600 hover:underline"
-          >
-            View all research notes →
-          </Link>
-        </p>
-        <p className="text-xs text-neutral-500">
-          Quant Notes is a public research notebook associated with the Quant
-          Engineering Lab.
+        <p className="text-md text-neutral-600 max-w-[60ch]">
+          Quant Engineering Lab defines a protocol for packaging quantitative claims
+          together with their evidence, so they can be independently verified without
+          repeated manual validation.
         </p>
       </section>
+
+      <section className="mb-8 space-y-1 text-md text-neutral-600">
+        <p>QEL does not build models or produce predictions.</p>
+        <p>QEL focuses exclusively on verification.</p>
+        <p>
+          The verifier is a licensed product; public materials describe the protocol
+          and example artifacts.
+        </p>
+      </section>
+
+      <hr className="mb-10 border-neutral-200" />
+
+      
     </>
   );
 }

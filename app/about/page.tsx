@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "About | Quant Notes",
-  description: "Scope and non-goals for this research record.",
+  title: "About | Quant Engineering Lab",
+  description: "Scope, boundaries, and non-goals of Quant Engineering Lab and its public materials.",
 };
 
 export default function About() {
@@ -11,24 +11,39 @@ export default function About() {
           About
         </p>
         <h1 className="text-3xl font-semibold tracking-tight">Scope</h1>
+
         <p className="text-lg text-neutral-700">
           This site publishes technical notes on numerical experiments, model
-          validation, and reproducibility in quantitative finance. Content is
-          written as research memoranda and is intended to be read independently
-          of any system, product, or service.
+          validation, and reproducibility in quantitative finance. These notes
+          are written as research memoranda and may be read independently.
         </p>
+
         <p className="text-lg text-neutral-700">
-          These notes are exploratory. Assumptions and conclusions may change
+          The site also hosts public materials related to Quant Engineering Lab,
+          a protocol for packaging quantitative claims together with their
+          evidence so they can be independently verified.
+        </p>
+
+        <p className="text-lg text-neutral-700">
+          Research notes are exploratory. Assumptions and conclusions may change
           as experiments evolve. Publication does not imply completeness,
-          correctness, or applicability.
+          correctness, or applicability of any specific result.
+        </p>
+
+        <p className="text-lg text-neutral-700">
+          The Quant Engineering Lab verifier is a licensed product and is not
+          provided on this site. Public materials describe the protocol and
+          illustrative example artifacts only.
         </p>
       </div>
 
-      <section className="mt-6 space-y-2">
+      <section className="mt-8 space-y-2">
         <h2 className="text-xl font-semibold tracking-tight">Non-goals</h2>
         <ul className="list-disc pl-5 space-y-1 text-neutral-800">
           <li>Investment advice, trading signals, or portfolio guidance.</li>
           <li>Performance claims, benchmarks, or comparative rankings.</li>
+          <li>Model development, training, or deployment.</li>
+          <li>Free or open verification services.</li>
           <li>Product marketing, sales material, or calls to action.</li>
           <li>
             Institutional positions, proprietary systems, or representations of
