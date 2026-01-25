@@ -2,6 +2,9 @@ import type { ReactNode } from "react";
 import FailureFirstReplayContracts, {
   meta as failureFirstMeta,
 } from "@/content/failure-first-replay-contracts";
+import NumericalValidationDefinitionProblem, {
+  meta as numericalValidationDefinitionMeta,
+} from "@/content/numerical-validation-definition-problem";
 
 export type Post = {
   slug: string;
@@ -14,6 +17,10 @@ export type Post = {
 // Posts are written as self-contained technical notes.
 // This file intentionally avoids frontmatter, tags, or CMS-style metadata.
 export const posts: Post[] = [
+  {
+    ...numericalValidationDefinitionMeta,
+    Content: NumericalValidationDefinitionProblem,
+  },
   {
     ...failureFirstMeta,
     Content: FailureFirstReplayContracts,
