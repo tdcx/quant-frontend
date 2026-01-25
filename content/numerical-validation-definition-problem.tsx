@@ -11,7 +11,6 @@ export default function NumericalValidationDefinitionProblem() {
 
   return (
     <>
-      <h2 className={h2}>Abstract</h2>
       <p className={p}>
         Numerical validation is commonly framed as a statistical or computational
         challenge. In practice, most validation failures originate earlier -- at
@@ -23,7 +22,7 @@ export default function NumericalValidationDefinitionProblem() {
         knowledge.
       </p>
 
-      <h2 className={h2}>1. Numerical Disagreement Is Not the Same as Validation Failure</h2>
+      <h2 className={h2}>Numerical Disagreement Is Not the Same as Validation Failure</h2>
       <p className={p}>
         Numerical systems disagree routinely. Different solvers, discretizations,
         data sources, execution orders, and hardware architectures yield
@@ -44,7 +43,7 @@ export default function NumericalValidationDefinitionProblem() {
         and nothing is conclusively learned.
       </p>
 
-      <h2 className={h2}>2. Why Tolerances Do Not Resolve Ambiguity</h2>
+      <h2 className={h2}>Why Tolerances Do Not Resolve Ambiguity</h2>
       <p className={p}>
         Tolerances are intended to absorb numerical noise. In practice, they
         often absorb ignorance.
@@ -66,7 +65,7 @@ export default function NumericalValidationDefinitionProblem() {
         verification boundary.
       </p>
 
-      <h2 className={h2}>3. Benchmarks Fail for the Same Reason</h2>
+      <h2 className={h2}>Benchmarks Fail for the Same Reason</h2>
       <p className={p}>
         Benchmarks are often treated as ground truth. In reality, they are
         reference implementations with their own assumptions, defaults, and
@@ -87,7 +86,7 @@ export default function NumericalValidationDefinitionProblem() {
         standard.&quot; These are social signals, not technical ones.
       </p>
 
-      <h2 className={h2}>4. Validation Requires Declared Obligations</h2>
+      <h2 className={h2}>Validation Requires Declared Obligations</h2>
       <p className={p}>
         Validation is not about checking outputs. It is about verifying
         obligations.
@@ -108,7 +107,7 @@ export default function NumericalValidationDefinitionProblem() {
         obligations, but because they never stated any.
       </p>
 
-      <h2 className={h2}>5. Unclassified Failure Is Worse Than Explicit Failure</h2>
+      <h2 className={h2}>Unclassified Failure Is Worse Than Explicit Failure</h2>
       <p className={p}>
         A system that fails loudly is debuggable. A system that fails silently is
         not.
@@ -128,7 +127,7 @@ export default function NumericalValidationDefinitionProblem() {
         Explicit failure is not a weakness. It is the precondition for learning.
       </p>
 
-      <h2 className={h2}>6. What a Validation System Must Be Able to Say</h2>
+      <h2 className={h2}>What a Validation System Must Be Able to Say</h2>
       <p className={p}>
         At minimum, a validation system should be able to answer the following
         questions without rerunning the experiment:
@@ -145,7 +144,7 @@ export default function NumericalValidationDefinitionProblem() {
         validation has already failed -- regardless of numerical agreement.
       </p>
 
-      <h2 className={h2}>7. The Cost of Undefined Validation</h2>
+      <h2 className={h2}>The Cost of Undefined Validation</h2>
       <p className={p}>
         Undefined validation scales poorly. As systems grow more complex,
         modular, and distributed, implicit assumptions proliferate faster than
