@@ -39,6 +39,9 @@ export default function RootLayout({
                 <Link href="/writing" className="hover:text-neutral-900">
                   Writing
                 </Link>
+                <Link href="/protocol" className="hover:text-neutral-900">
+                  Protocol
+                </Link>
                 <Link href="/about" className="hover:text-neutral-900">
                   About
                 </Link>
